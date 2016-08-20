@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AllTrials</string>
+    <string name="text_off">Off</string>
+    <string name="text_on">On</string>
+    <string name="ToggleButton1">Tog1</string>
+    <string name="ToggleButton2">Tog2</string>
+    <string name="Button">Button</string>
+    <string name="Next_Example">Next Example</string>
+</resources>

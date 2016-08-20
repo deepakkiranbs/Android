@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "807478865632",
+    "project_id": "firebase-beards"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807478865632:android:16ac4ba93f3f255a",
+        "android_client_info": {
+          "package_name": "com.mycompany.beards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807478865632-r9eao3mg75mbppe3tneqn5hn5tb4crqm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.beards",
+            "certificate_hash": "AC6138300EEAC583BE095FEC2ACEC1321F8D8EA5"
+          }
+        },
+        {
+          "client_id": "807478865632-avs5jqh7m121n42fn51ev693qobfqlqr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsfbOkcG3aWFBCGN0CMjmUHkQlAyNr2oU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
