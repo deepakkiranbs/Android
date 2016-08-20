@@ -19,7 +19,7 @@ import com.google.android.gms.common.api.OptionalPendingResult;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
 
-public class LoginActivity extends AppCompatActivity implements
+public class MainActivity extends AppCompatActivity implements
         GoogleApiClient.OnConnectionFailedListener,
         View.OnClickListener {
 
@@ -192,7 +192,6 @@ private void updateUI(boolean signedIn) {
         findViewById(R.id.sign_out_and_disconnect).setVisibility(View.VISIBLE);
         } else {
         mStatusTextView.setText(R.string.signed_out);
-
         findViewById(R.id.sign_in_button).setVisibility(View.VISIBLE);
         findViewById(R.id.sign_out_and_disconnect).setVisibility(View.GONE);
         }
