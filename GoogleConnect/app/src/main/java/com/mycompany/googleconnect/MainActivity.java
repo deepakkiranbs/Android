@@ -34,6 +34,7 @@ private ProgressDialog mProgressDialog;
 protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        findViewById(R.id.marker_progress).setVisibility(View.GONE);
 
         // Views
         mStatusTextView = (TextView) findViewById(R.id.status);
@@ -130,8 +131,10 @@ private void handleSignInResult(GoogleSignInResult result) {
 
 // [START signIn]
 private void signIn() {
+    findViewById(R.id.marker_progress).setVisibility(View.VISIBLE);
         Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
         startActivityForResult(signInIntent, RC_SIGN_IN);
+
         }
 // [END signIn]
 
@@ -187,7 +190,9 @@ private void hideProgressDialog() {
         }
 
 private void updateUI(boolean signedIn) {
-        if (signedIn) {
+    findViewById(R.id.marker_progress).setVisibility(View.GONE);
+
+    if (signedIn) {
         findViewById(R.id.sign_in_button).setVisibility(View.GONE);
         findViewById(R.id.sign_out_and_disconnect).setVisibility(View.VISIBLE);
         } else {
